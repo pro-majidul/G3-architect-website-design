@@ -50,6 +50,14 @@ main > section{
 
 }
 
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #727272;
+}
+
+
+
 /* navbar area style start */
 .navbar{
     align-items: center;
@@ -120,11 +128,7 @@ main > section{
     width: 560px;
     margin-left: 50px;
 }
-.features-title{
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #727272;
-}
+
 #of-text{
     font-weight: bold;
     color: #131313;
@@ -132,6 +136,45 @@ main > section{
 .bg-color{
     font-weight: bold;
     color: #FF900E;
+}
+
+/* fact section area style */
+
+.some-facts-design{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 50px;
+}
+
+.facts-text{
+    max-width: 500px;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.fact-number{
+    color: #424242;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.fact-name{
+    color: #727272;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 
@@ -160,6 +203,13 @@ main > section{
         max-width: 80%;
         margin-left: 0;
     }
+    .facts-container{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
+    }
+    .fact-card{
+        width: 90%;
+    }
 }
 
 
@@ -171,5 +221,14 @@ main > section{
     }
     .features{
         margin-top: 30px ;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 20px;
+        
+    }
+    .fact-card{
+        width: 90%;
+        margin-bottom: 30px;
     }
 }
