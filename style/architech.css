@@ -44,9 +44,15 @@ body{
     margin-bottom: 33px;
 }
 
+.features-text{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
 main > section{
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
 
 }
 
@@ -81,7 +87,7 @@ main > section{
 
 .navbar , 
 .banner{
-    max-width: 80%;
+    max-width: 88%;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -90,7 +96,7 @@ main > section{
 /* banner area style */
 
 .banner-content{
-    max-width: 80%;
+    max-width: 86%;
     margin:50px auto;
     text-align: center;
 
@@ -138,6 +144,66 @@ main > section{
     color: #FF900E;
 }
 
+/* enjoy feature area style */
+.enjoy-feature{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.features-container{
+    max-width:500px;
+}
+#brand-side{
+    border-left: 5px solid #FF900E;
+    padding-left: 30px;
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+.features-card{
+    box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border: none;
+    border-radius: 8px;
+    background-color: #ffff;
+    padding: 15px;
+    margin-bottom: 14px;
+}
+.features-heading{
+    font-size: 1.4rem;
+    color: #131313;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.features-photo{
+    max-width: 600px;
+}
+.features-photo > img{
+    width: 100%;
+}
+
+.big-btn{
+    background-color: #FF900E;
+    height: 100px;
+    width: 200px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: -300px;
+    margin-left: -90px;
+}
+#big-text{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+
+
 /* fact section area style */
 
 .some-facts-design{
@@ -178,6 +244,41 @@ main > section{
 }
 
 
+/* sponspor area style start here */
+.sponser{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+}
+
+
+.sponspor-text{
+    max-width: 540px;
+    margin: 40px auto;
+    text-align: center;
+}
+.sponspor-container{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 20px;
+}
+.sponspor-container > img{
+    filter: grayscale(100%);
+}
+
+/* footer area style */
+.footer{
+    max-width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 18px;
+}
+.footer > .font-style{
+    color: #424242;
+    font-size: 14px;
+}
 
 
 
@@ -187,7 +288,8 @@ main > section{
 @media screen and (max-width:576px) {
     .navbar , 
     .nav-links ,
-    .teams
+    .teams ,
+    .enjoy-feature
     {
         flex-direction: column;
     }  
@@ -206,29 +308,47 @@ main > section{
     .facts-container{
         grid-template-columns: repeat(1 , 1fr);
         gap: 20px;
+        justify-items: center;
     }
-    .fact-card{
-        width: 90%;
+    .sponspor-container{
+        justify-items: center;
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 6  0px;
     }
+    .big-btn{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+
 }
 
 
 /* medium device responsive */
 
-@media screen and (min-width:577px) and (max-width:992px) {
-    .teams{
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams ,
+    .enjoy-feature
+    {
         flex-direction: column;
     }
     .features{
-        margin-top: 30px ;
+        margin: 30px auto;
     }
     .facts-container{
         grid-template-columns: repeat(2 , 1fr);
         gap: 20px;
+        justify-items: center;
         
     }
-    .fact-card{
-        width: 90%;
-        margin-bottom: 30px;
+    .sponspor-container{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 20px;
     }
+    .big-btn{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+
 }
